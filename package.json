@@ -1,0 +1,22 @@
+{
+  "name": "dentalclinic",
+  "version": "1.0.0",
+  "description": "Thank you for using our template!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+      "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chetan3460/DentalClinic.git"
+  },
+  "author": "chetan dhargalkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chetan3460/DentalClinic/issues"
+  },
+  "homepage": "https://github.com/chetan3460/DentalClinic#readme"
+}
