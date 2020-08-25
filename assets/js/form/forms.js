@@ -81,7 +81,7 @@ $document.on('ready', function () {
 				$(form).ajaxSubmit({
 					type: "POST",
 					data: $(form).serialize(),
-					url: "form/process-contact.php",
+					url: "/assets/js/form/process-contact.php",
 					success: function success() {
 						$('.successform', $contactform).fadeIn();
 						$contactform.get(0).reset();
