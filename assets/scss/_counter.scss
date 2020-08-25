@@ -1,0 +1,64 @@
+
+
+/* :: 17.1.0 Single Cool Facts CSS */
+.counter-section{
+    margin-top: 0;
+        background-image: url("/assets/img/core-img/3.png");
+        background-size: cover;
+        background-position: center center;
+        background-color: #121521;
+        padding-top: 45px;
+        padding-bottom: 15px;
+        position: relative;
+        z-index: 1;
+
+    .counter-box {
+        position: relative;
+        z-index: 1;
+
+        margin-top: 10px;
+        // padding: 45px 15px 63px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        // background-color: #fff;
+        // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+        .counter-box-icon {
+            font-size: 48px;
+            line-height: 1em;
+            color: $theme-color;
+        }
+
+        .counter-box-number {
+            font-size: 30px;
+            line-height: 1em;
+            font-weight: 600;
+            color: $white-color;
+        }
+        & > *:not(:first-child) {
+            margin-top: 16px;
+        }
+        .decor {
+            opacity: 1;
+            transform: translateY(0);
+            width: 29px;
+            height: 1px;
+            background-color: #1e76bd;
+            transition: 1s ease 0.5s;
+        }
+        .counter-box-text {
+            opacity: 1;
+            transform: translateY(0);
+            font-size: 18px;
+            line-height: 1em;
+            font-weight: 400;
+            font-family: $font2;
+            color: $theme-color;
+            transition: 0.5s ease 1.8s;
+        }
+    }
+
+}

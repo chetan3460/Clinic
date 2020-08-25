@@ -1,0 +1,201 @@
+/*-- Appointment --*/
+.appointment-area {
+	background-image: url("../img/home-two/6.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-top: 200px;
+}
+.appointment-item {
+	max-width: 770px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	padding: 80px 100px 80px;
+	border-radius: 10px;
+	background-image: url("../img/home-two/5.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	h2 {
+		color: $theme-color;
+		font-weight: 600;
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	span {
+		display: block;
+		color: #4a6f8a;
+		font-size: 15px;
+		font-weight: 600;
+		margin-bottom: 50px;
+	}
+	.appointment-form {
+		.form-group {
+			padding-left: 70px;
+			position: relative;
+			margin-bottom: 60px;
+			i {
+				display: inline-block;
+				color: $theme-color;
+				position: absolute;
+				top: 11px;
+				left: 0;
+				font-size: 50px;
+			}
+			label {
+				margin-bottom: 10px;
+				color: #121521;
+				font-size: 14px;
+                font-weight: 500;
+                font-family: $font2;
+            }
+            .error {
+                display: block;
+                color: #ff0000;
+                margin-top: 0px;
+            }
+			.form-control {
+				border-radius: 0;
+				border: 0;
+				border-bottom: 1px solid $theme-color;
+				font-size: 15px;
+				padding-left: 0;
+				padding-bottom: 8px;
+				height: 40px;
+				background-color: transparent;
+				&:focus {
+					-webkit-box-shadow: none;
+					box-shadow: none;
+					border-bottom: 1px solid $theme-color;
+				}
+			}
+			::-webkit-input-placeholder {
+				color: #4a6f8a;
+			}
+			:-ms-input-placeholder {
+				color: #4a6f8a;
+			}
+			::-ms-input-placeholder {
+				color: #4a6f8a;
+			}
+			::placeholder {
+				color: #4a6f8a;
+			}
+		}
+		.appointment-btn {
+			color: #ffffff;
+			background-color: $theme-color;
+			font-weight: 500;
+            font-size: 14px;
+            font-family: $font2;
+            padding: 15px 25px 13.5px 25px;
+            border: 1px solid transparent;
+            @include transition(.5s);
+            @include border-radius(30px);
+
+			&:hover {
+                background: #fff;
+                color: $theme-color !important;
+                border: 1px solid $theme-color;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+		}
+	}
+}
+
+  /*-- End Appointment --*/
+
+  /*-- Appointment --*/
+  .appointment-area-two {
+	padding-top: 100px;
+	padding-bottom: 180px;
+}
+.appointment-item-two {
+	background-image: none;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0px 0px 20px 0px #ddd;
+	box-shadow: 0px 0px 20px 0px #ddd;
+	padding: 80px 65px 80px;
+	position: relative;
+	.appointment-shape {
+		position: absolute;
+		bottom: -65px;
+		left: -74px;
+		width: 310px;
+		-webkit-animation: a-six 5s infinite linear;
+		animation: a-six 5s infinite linear;
+	}
+}
+.appointment-item-two-right {
+	background-image: url("../img/appointment/2.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.appointment-item-content {
+		background-color: #F5FBFF;
+		padding: 95px 40px 100px;
+		margin: 0 40px;
+		border-radius: 10px;
+		h2 {
+			color: $theme-color;
+			font-weight: 600;
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+		.content-one {
+			display: inline-block;
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					list-style-type: none;
+					display: block;
+					position: relative;
+					color: #121521;
+					font-weight: 500;
+					font-size: 13px;
+					margin-bottom: 10px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					&:before {
+						position: absolute;
+						content: '';
+						width: 50px;
+						height: 1px;
+						top: 10px;
+						left: 95px;
+						background-color: #b7b2b2;
+					}
+				}
+			}
+		}
+		.content-two {
+			display: inline-block;
+			margin-left: 70px;
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					list-style-type: none;
+					display: block;
+					font-size: 13px;
+					font-weight: 500;
+					color: #4a6f8a;
+					margin-bottom: 10px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+  /*-- End Appointment --*/

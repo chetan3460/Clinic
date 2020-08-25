@@ -1,0 +1,172 @@
+.testimonial-area{
+    padding-top: 120px;
+    padding-bottom: 90px;
+    @media #{$medium_device}{
+        padding-top: 90px;
+    }
+    @media #{$tab_device}{
+        padding-top: 50px;
+    }
+    @media #{$xs}{
+        padding-top: 50px;
+    }
+    
+    .review-us{
+        .rating-box {
+            margin-top: -5px;
+            font-size: 26px;
+            line-height: 42px;
+            font-weight: 500;
+            font-family:$font2;
+            color: #444;
+            text-align: center;
+            .rating-number {
+                font-size: 61px;
+                line-height: 1em;
+                font-weight: 500;
+                color: $theme-color;
+
+            }
+            .star-rating {
+                color: $theme-color;
+                line-height: 1em;
+                margin-bottom: 12px;
+                i{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .testimonial-caption{
+        & p{
+            font-size:25px;
+            @media #{$tab_device}{
+                font-size:20px;
+                padding: 0 0px;
+                font-size:17px;
+            }
+            @media #{$xs}{
+                font-size:19px;
+                padding: 0 10px;
+                font-size:17px;
+            }
+            color: $heading_color;
+            color:#191d34;
+            line-height: 45px;
+            line-height: 1.5;
+            padding: 0 80px;
+            margin-bottom: 37px;
+        }
+    }
+    .rattiong-caption{
+        & span{
+            color:#112e41;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            & span{
+                color: #767676;
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+/* Homepage1 Testimonial */
+.h1-testimonial-active{
+    button.slick-arrow {
+        position: absolute;
+        top: 67%;
+        left: -133px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background: none;
+        border: 0;
+        padding: 0;
+        z-index: 2;
+        opacity: 1;
+        visibility: visible;
+        height: 45px;
+        width: 45px;
+        line-height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        background:none;
+        color:$theme-color;
+        font-size: 20px;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+        
+        @media #{$small_mobile}{
+            left: -45px;
+        }
+         @media #{$small_mobile}{
+            left: -45px;
+        }
+        
+    } 
+   button.slick-next {
+        left: auto;
+        right: -133px;
+        @media #{$small_mobile}{
+            right: -45px;
+        }
+    }
+    &:hover button.slick-prev {
+        left: -120px;
+        @media #{$small_mobile}{
+            left: 0;
+        }
+    }
+    &:hover button.slick-next {
+    right: -120px;
+    @media #{$small_mobile}{
+        right: 0;
+    }
+    }
+    &:hover button {
+        background: $theme-color;
+        color: #fff;
+    }
+}
+
+.testimonial-icon img {
+	display: block;
+	left: 0;
+	right: 0;
+    margin: 0 auto;
+    width: auto;
+}
+
+
+// Testimonial Animation
+.h1-testimonial-active .testimonial-icon img{
+   border: 3px dashed transparent;
+   border-radius: 50%;
+}
+.h1-testimonial-active:hover .testimonial-icon {
+                
+    .ani-btn {
+        animation: 1.3s cubic-bezier(0.8, 0, 0, 1) 0s normal none infinite running pulse;
+        box-shadow: 0 0 0 0 rgb(25, 206, 103);
+        -webkit-animation: 1.3s cubic-bezier(0.8, 0, 0, 1) 0s normal none infinite running pulse;
+     }
+      
+      @-webkit-keyframes pulse {
+        to {
+          box-shadow: 0 0 0 45px rgba(226, 14, 14, 0); } }
+      
+      @keyframes pulse {
+        to {
+          box-shadow: 0 0 0 45px rgba(230, 10, 10, 0); } 
+        }
+}
+
+
+.slick-initialized .slick-slide {
+    outline: 0;
+}

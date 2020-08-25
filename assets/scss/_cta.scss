@@ -1,0 +1,55 @@
+.cta-text-section{
+    background-color: #f4f9fd;
+    padding: 50px 0 50px;
+    .bottom-text{
+        h2{
+            margin-bottom: 17px;
+            font-size: 14px;
+            line-height: 1.2em;
+            font-weight: 300;
+            font-family: $font2;
+            letter-spacing: 1px;
+            color: $theme-color;
+        }
+        a{
+            @include transition(.2s);
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}
+.cta-two {
+    padding: 55px 0;
+    background-color: $theme-color-2;
+    text-align: center;
+    .cta-two__title {
+        margin: 0;
+        color: #FFFFFF;
+        font-size: 27px;
+        font-family: $font1;
+        font-weight: 300;
+        .cta-two__highlight {
+            font-weight: 600;
+            color: #fff;
+            transition: all .4s ease;
+            &:hover {
+                color: #eb4343;
+            }
+        }
+        .cta-two__link {
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1em;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 3px;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            &:hover {
+                color: #eb4343;
+                border-color: #eb4343;
+            }
+        }
+    }
+}

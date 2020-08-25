@@ -1,0 +1,61 @@
+/* arrows */
+
+.slick-prev,
+.slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 45px;
+	height: 45px;
+	margin-top: -23px;
+	padding: 0;
+	cursor: pointer;
+	color: $theme-color;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	z-index: 99;
+	text-align: center;
+	@include transition(.2s);
+	border-radius: 50%;
+	border: 2px solid #dedede;
+}
+.slick-prev:hover,
+.slick-next:hover{
+	border-color: $theme-color;
+	background-color: $theme-color;
+	color: $theme-color;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family:"Font Awesome 5 Pro";
+    /* speak: none; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev:hover:before,
+.slick-next:hover:before {
+	color: #fff;
+}
+.slick-prev {
+	left:0;
+}
+.slick-prev:before {
+	content: "\f053";
+	padding-right: 1px;
+}
+.slick-next {
+	right: 0;
+}
+.slick-next:before {
+	content: "\f054";
+	padding-left: 2px;
+}

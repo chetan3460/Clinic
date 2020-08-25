@@ -1,0 +1,278 @@
+/*================================================
+Main Services Area CSS
+=================================================*/
+.main-services-area {
+	padding-top: 120px;
+	padding-bottom: 90px;
+	position: relative;
+	z-index: 1;
+}
+.main-services-box {
+	margin-bottom: 30px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
+	box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
+	padding: 25px 20px;
+	position: relative;
+	z-index: 1;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	overflow: hidden;
+	.icon {
+		margin-bottom: 20px;
+		text-align: center;
+    width: 80px;
+    height: 80px;
+    line-height: 95px;
+		border-radius: 0px 140px 130px;
+		background-color: $theme-color;
+		color: #ffffff;
+		font-size: 43px;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+	}
+	h3 {
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+		margin-bottom: 0;
+		position: relative;
+		padding-bottom: 5px;
+		font-size: 19px;
+		font-weight: 700;
+		a {
+			color: #fff;
+		}
+		&::before {
+			width: 0;
+			height: 1px;
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: #ffffff;
+			-webkit-transition: 0.5s;
+			transition: 0.5s;
+		}
+	}
+	p {
+		line-height: 1.7;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+	&::before {
+		width: 0;
+		height: 100%;
+		z-index: -1;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $theme-color;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		border: 10px solid #ffffff;
+		left: -80px;
+		bottom: -80px;
+		border-radius: 50%;
+		z-index: -1;
+		opacity: 0.15;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+	}
+	&:hover {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+		&::before {
+			width: 100%;
+		}
+		.icon {
+			background-color: #49d685;
+			color: #ffffff;
+		}
+		h3 {
+				color: #ffffff;
+			&::before {
+				width: 80px;
+			}
+		}
+		p {
+			color: #ffffff;
+		}
+		&::after {
+			left: -50px;
+			bottom: -50px;
+		}
+	}
+}
+
+  .shape2 {
+    position: absolute;
+    right: 0;
+    bottom: -120px;
+    z-index: -1;
+    -webkit-animation: moveBounce 5s linear infinite;
+            animation: moveBounce 5s linear infinite;
+  }
+  
+  .shape2 img {
+    opacity: .70;
+  }
+  
+
+
+  .main-services-area-block {
+
+  padding: 100px 0 100px;
+}
+  // 
+  .pos-r {
+    position: relative;
+    background-color: #f4f9fd;
+  }
+  .featured-item {
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: #ffffff;
+    &.style-3 {
+      z-index: 9;
+      box-shadow: none;
+      border: 1px solid #f6f7fb;
+      padding: 25px;
+      overflow: hidden;
+      .featured-icon {
+        margin-bottom: 40px;
+        position: relative;
+        display: inline-block;
+        font-size: 50px;
+        background: #fff;
+        width: 80px;
+        height: 80px;
+        line-height: 100px;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 500ms ease;
+        i {
+          background: linear-gradient(135deg, $theme-color 32.5%, #8046f4 45%, #fb3e7d 60%, #00f2aa 70%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      &:before {
+        content: '';
+        width: 273px;
+        height: 273px;
+        background: #00f2aa;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -148px;
+        right: -83px;
+        opacity: 0.1;
+        transform: translate(50%, 50%);
+        z-index: -1;
+      }
+      &:after {
+        content: '';
+        width: 493px;
+        height: 493px;
+        background: #00f2aa;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -250px;
+        right: -180px;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+      }
+      .border-anim {
+        z-index: -1;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: -10px;
+        top: -10px;
+        border: 2px solid $theme-color;
+        border-radius: 50%;
+        clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%, 0 0);
+        transition: all 500ms ease;
+        -webkit-animation: round-circle 2s infinite linear;
+        -moz-animation: round-circle 2s infinite linear;
+        -o-animation: round-circle 2s infinite linear;
+        animation: round-circle 2s infinite linear;
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused;
+        &:before {
+          position: absolute;
+          content: '';
+          background: #fff;
+          width: 8px;
+          height: 8px;
+          left: 10px;
+          bottom: 9px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .featured-item.style-3:hover,
+  .featured-item.style-3.active {
+    background: $theme-color;
+    color: #ffffff;
+  }
+  .featured-item.style-3:hover:before,
+  .featured-item.style-3.active:before {
+    transform: translate(0%, 0%);
+    transition: all 0.5s linear;
+  }
+  .featured-item.style-3:hover:after,
+  .featured-item.style-3.active:after {
+    opacity: 0.1;
+    transform: translate(0%, 0%);
+    transition: all 0.9s linear;
+  }
+  .featured-item.style-3:hover .featured-icon,
+  .featured-item.style-3.active .featured-icon {
+    color: #ffffff;
+    -webkit-text-fill-color: currentColor;
+  }
+  .featured-item.style-3:hover .featured-title h5,
+  .featured-item.style-3.active .featured-title h5 {
+    color: #ffffff;
+  }
+  .featured-item.style-3:hover .featured-desc p,
+  .featured-item.style-3.active .featured-desc p {
+    color: #ffffff;
+  }
+  .featured-item.style-3:hover .featured-desc .boxed-btn3-white-2,
+  .featured-item.style-3.active .featured-desc .boxed-btn3-white-2 {
+    background: #fff;
+    color: $theme-color !important;
+    border: 1px solid $theme-color;
+  }
+  .featured-item.style-3:hover .border-anim,
+  .featured-item.style-3.active .border-anim {
+    border-color: #00f2aa;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0 0);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+  }
+  .main-services-area-block {
+    .featured-item{
+      min-height: 632px;
+        @media #{$mobile_device} {
+          min-height: auto;
+      }
+    }
+  }

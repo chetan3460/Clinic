@@ -1,0 +1,197 @@
+
+// Button
+.boxed-btn {
+	background: #fff;
+	color: #131313;
+	display: inline-block;
+	padding: 18px 44px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #1e76bd;
+    letter-spacing: 3px;
+    // width: 180px;
+    text-align: center;
+    color: #1e76bd !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    &:hover{
+        background: #1e76bd;
+        color: #fff !important;
+        border: 1px solid #1e76bd;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+.boxed-btn3 {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
+    background: rgb(1,129,245); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(1,129,245,1) 0%, rgba(93,178,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(1,129,245,1) 0%,rgba(93,178,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(1,129,245,1) 0%,rgba(93,178,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0181f5', endColorstr='#1e76bd',GradientType=1 ); /* IE6-9 */
+	color: #fff;
+	display: inline-block;
+	padding: 18px 44px;
+	font-family: $font1;
+	font-size: 15px;
+    font-weight: 600;
+    border: 0;
+    border: 1px solid transparent;
+    @include border-radius(4px);
+    // width: 180px;
+    text-align: center;
+    color: #fff !important;
+    text-transform: capitalize;
+    @include transition(.5s);
+    cursor: pointer;
+    &:hover{
+        background: #fff;
+        color: #1e76bd !important;
+        border: 1px solid #1e76bd;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+
+.boxed-btn3-white {
+	color: $white-color;
+	display: inline-block;
+    padding: 15px 25px;
+	font-family: $font2;
+	font-size: 15px;
+    font-weight: 500;
+    border: 1px solid $white-color;
+    @include border-radius(30px);
+    text-align: center;
+    text-transform: uppercase;
+    @include transition(.5s);
+    cursor: pointer;
+    &:hover{
+        background: #fff;
+        color: $theme-color !important;
+        // border: 2px solid transparent;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+
+.boxed-btn3-white-2 {
+    padding: 17px 50px 15.5px 25px;
+    position: relative;
+    background: $theme-color;
+    color: #fff !important;
+	display: inline-block;
+	font-family: $font2;
+	font-size: 14px;
+    font-weight: 500;
+    border:1px solid transparent;
+    border-radius: 30px;
+    // width: 180px;
+    text-align: center;
+    text-transform: uppercase;
+    @include transition(.5s);
+    cursor: pointer;
+    i {
+        position: absolute;
+        right: 7px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        text-align: center;
+        display: inline-block;
+        height: 33px;
+        width: 33px;
+        line-height: 33px;
+        color: #ffffff;
+        border-radius: 50%;
+        background-color: #8ee9b2;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+      
+    &:hover{
+        background: #fff;
+        color: #19ce67 !important;
+        border: 1px solid #19ce67;
+    }
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+
+
+.boxed-btn2 {
+	background: transparent;
+	color: #fff;
+	display: inline-block;
+	padding: 18px 24px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &:hover{
+        background: #fff;
+        color: #131313 !important;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.line-button{
+    color: #919191;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    &::before{
+        position: absolute;
+        content: "";
+        background: #919191;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+    }
+    &:hover{
+        color: #1e76bd;
+    }
+    &:hover::before{
+        background: #1e76bd;
+    }
+}
+.book_now{
+    display: inline-block;
+    font-size: 14px;
+    color: #1e76bd;
+    border: 1px solid #1e76bd;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    &:hover{
+        background: #1e76bd;
+        color: #fff;
+    }
+}

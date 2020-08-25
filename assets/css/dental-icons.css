@@ -1,0 +1,499 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "dental-icons";
+  src:url("../fonts/dental-icons.eot");
+  src:url("../fonts/dental-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/dental-icons.woff") format("woff"),
+    url("../fonts/dental-icons.ttf") format("truetype"),
+    url("../fonts/dental-icons.svg#dental-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "dental-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="dentco-"]:before,
+[class*=" dentco-"]:before {
+  font-family: "dental-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dentco-appointment:before {
+  content: "\e000";
+}
+.dentco-appointment-1:before {
+  content: "\e001";
+}
+.dentco-implant:before {
+  content: "\e002";
+}
+.dentco-tooth-1:before {
+  content: "\e003";
+}
+.dentco-assistance:before {
+  content: "\e004";
+}
+.dentco-tooth:before {
+  content: "\e005";
+}
+.dentco-bill:before {
+  content: "\e006";
+}
+.dentco-braces-1:before {
+  content: "\e007";
+}
+.dentco-braces:before {
+  content: "\e008";
+}
+.dentco-broken-tooth:before {
+  content: "\e009";
+}
+.dentco-tooth-brush:before {
+  content: "\e00a";
+}
+.dentco-014-tooth-brush:before {
+  content: "\e00b";
+}
+.dentco-tooth-brush-1:before {
+  content: "\e00c";
+}
+.dentco-tooth-drill:before {
+  content: "\e00d";
+}
+.dentco-stethoscope:before {
+  content: "\e00e";
+}
+.dentco-tooth-3:before {
+  content: "\e00f";
+}
+.dentco-tooth-2:before {
+  content: "\e010";
+}
+.dentco-checkup:before {
+  content: "\e011";
+}
+.dentco-checkup-1:before {
+  content: "\e012";
+}
+.dentco-decayed:before {
+  content: "\e013";
+}
+.dentco-tooth-4:before {
+  content: "\e014";
+}
+.dentco-invoice:before {
+  content: "\e015";
+}
+.dentco-care-1:before {
+  content: "\e016";
+}
+.dentco-care:before {
+  content: "\e017";
+}
+.dentco-probe:before {
+  content: "\e018";
+}
+.dentco-tooth-5:before {
+  content: "\e019";
+}
+.dentco-probe-1:before {
+  content: "\e01a";
+}
+.dentco-care-3:before {
+  content: "\e01b";
+}
+.dentco-medicine:before {
+  content: "\e01c";
+}
+.dentco-dental:before {
+  content: "\e01d";
+}
+.dentco-dentist:before {
+  content: "\e01e";
+}
+.dentco-expense:before {
+  content: "\e01f";
+}
+.dentco-extract:before {
+  content: "\e020";
+}
+.dentco-worldwide:before {
+  content: "\e021";
+}
+.dentco-care-4:before {
+  content: "\e022";
+}
+.dentco-ipad:before {
+  content: "\e023";
+}
+.dentco-image:before {
+  content: "\e024";
+}
+.dentco-anesthesia-1:before {
+  content: "\e025";
+}
+.dentco-probe-2:before {
+  content: "\e026";
+}
+.dentco-wallet:before {
+  content: "\e027";
+}
+.dentco-insurance:before {
+  content: "\e028";
+}
+.dentco-invoice-1:before {
+  content: "\e029";
+}
+.dentco-tooth-6:before {
+  content: "\e02a";
+}
+.dentco-location:before {
+  content: "\e02b";
+}
+.dentco-dentist-1:before {
+  content: "\e02c";
+}
+.dentco-medicine-1:before {
+  content: "\e02d";
+}
+.dentco-smartphone:before {
+  content: "\e02e";
+}
+.dentco-implant-1:before {
+  content: "\e02f";
+}
+.dentco-tooth-7:before {
+  content: "\e030";
+}
+.dentco-payment-method:before {
+  content: "\e031";
+}
+.dentco-dental-process:before {
+  content: "\e032";
+}
+.dentco-care-2:before {
+  content: "\e033";
+}
+.dentco-care-1-1:before {
+  content: "\e034";
+}
+.dentco-tooth-8:before {
+  content: "\e035";
+}
+.dentco-pie-chart:before {
+  content: "\e036";
+}
+.dentco-record:before {
+  content: "\e037";
+}
+.dentco-support:before {
+  content: "\e038";
+}
+.dentco-surgeon:before {
+  content: "\e039";
+}
+.dentco-caries:before {
+  content: "\e03a";
+}
+.dentco-medicine-2:before {
+  content: "\e03b";
+}
+.dentco-laryngeal-mirror:before {
+  content: "\e03c";
+}
+.dentco-probe-3:before {
+  content: "\e03d";
+}
+.dentco-care-2-1:before {
+  content: "\e03e";
+}
+.dentco-care-5:before {
+  content: "\e03f";
+}
+.dentco-care-6:before {
+  content: "\e040";
+}
+.dentco-extraction:before {
+  content: "\e041";
+}
+.dentco-implant-2:before {
+  content: "\e042";
+}
+.dentco-tooth-9:before {
+  content: "\e043";
+}
+.dentco-toothpaste:before {
+  content: "\e044";
+}
+.dentco-user:before {
+  content: "\e045";
+}
+.dentco-dental-dentist-2:before {
+  content: "\e046";
+}
+.dentco-checkup-2:before {
+  content: "\e047";
+}
+.dentco-anesthesia-2:before {
+  content: "\e049";
+}
+.dentco-anesthesia:before {
+  content: "\e048";
+}
+.dentco-anesthesia-1-1:before {
+  content: "\e04a";
+}
+.dentco-appointment-2:before {
+  content: "\e04b";
+}
+.dentco-appointment-3:before {
+  content: "\e04c";
+}
+.dentco-implant-3:before {
+  content: "\e04d";
+}
+.dentco-tooth-11:before {
+  content: "\e04e";
+}
+.dentco-assistance-1:before {
+  content: "\e04f";
+}
+.dentco-tooth-10:before {
+  content: "\e050";
+}
+.dentco-bill-1:before {
+  content: "\e051";
+}
+.dentco-braces-3:before {
+  content: "\e052";
+}
+.dentco-braces-2:before {
+  content: "\e053";
+}
+.dentco-broken-tooth-1:before {
+  content: "\e054";
+}
+.dentco-tooth-brush-1-1:before {
+  content: "\e055";
+}
+.dentco-tooth-brush-1-2:before {
+  content: "\e056";
+}
+.dentco-tooth-brush-2:before {
+  content: "\e057";
+}
+.dentco-tooth-drill-1:before {
+  content: "\e058";
+}
+.dentco-stethoscope-1:before {
+  content: "\e059";
+}
+.dentco-tooth-12:before {
+  content: "\e05a";
+}
+.dentco-tooth-13:before {
+  content: "\e05b";
+}
+.dentco-checkup-3:before {
+  content: "\e05c";
+}
+.dentco-checkup-4:before {
+  content: "\e05d";
+}
+.dentco-decayed-1:before {
+  content: "\e05e";
+}
+.dentco-tooth-14:before {
+  content: "\e05f";
+}
+.dentco-invoice-2:before {
+  content: "\e060";
+}
+.dentco-dental-care:before {
+  content: "\e061";
+}
+.dentco-dental-care-1:before {
+  content: "\e062";
+}
+.dentco-dental-probe-1:before {
+  content: "\e063";
+}
+.dentco-tooth-15:before {
+  content: "\e064";
+}
+.dentco-dental-probe:before {
+  content: "\e065";
+}
+.dentco-dental-care-2:before {
+  content: "\e066";
+}
+.dentco-medicine-3:before {
+  content: "\e067";
+}
+.dentco-dental-1:before {
+  content: "\e068";
+}
+.dentco-dentist-2:before {
+  content: "\e069";
+}
+.dentco-expense-1:before {
+  content: "\e06a";
+}
+.dentco-extract-1:before {
+  content: "\e06b";
+}
+.dentco-worldwide-1:before {
+  content: "\e06c";
+}
+.dentco-dental-care-3:before {
+  content: "\e06d";
+}
+.dentco-ipad-1:before {
+  content: "\e06e";
+}
+.dentco-image-1:before {
+  content: "\e06f";
+}
+.dentco-anesthesia-3:before {
+  content: "\e070";
+}
+.dentco-dental-probe-2:before {
+  content: "\e071";
+}
+.dentco-wallet-1:before {
+  content: "\e072";
+}
+.dentco-insurance-1:before {
+  content: "\e073";
+}
+.dentco-invoice-3:before {
+  content: "\e074";
+}
+.dentco-tooth-16:before {
+  content: "\e075";
+}
+.dentco-location-1:before {
+  content: "\e076";
+}
+.dentco-dentist-3:before {
+  content: "\e077";
+}
+.dentco-medicine-4:before {
+  content: "\e078";
+}
+.dentco-smartphone-1:before {
+  content: "\e079";
+}
+.dentco-implant-4:before {
+  content: "\e07a";
+}
+.dentco-tooth-17:before {
+  content: "\e07b";
+}
+.dentco-052-payment-method:before {
+  content: "\e07c";
+}
+.dentco-053-process:before {
+  content: "\e07d";
+}
+.dentco-dental-care-4:before {
+  content: "\e07e";
+}
+.dentco-dental-care-5:before {
+  content: "\e07f";
+}
+.dentco-tooth-18:before {
+  content: "\e080";
+}
+.dentco-pie-chart-1:before {
+  content: "\e081";
+}
+.dentco-dental-record:before {
+  content: "\e082";
+}
+.dentco-support-1:before {
+  content: "\e083";
+}
+.dentco-surgeon-1:before {
+  content: "\e084";
+}
+.dentco-caries-1:before {
+  content: "\e085";
+}
+.dentco-medicine-5:before {
+  content: "\e086";
+}
+.dentco-laryngeal-mirror-1:before {
+  content: "\e087";
+}
+.dentco-dental-probe-3:before {
+  content: "\e088";
+}
+.dentco-dental-care-6:before {
+  content: "\e089";
+}
+.dentco-dental-care-8:before {
+  content: "\e08a";
+}
+.dentco-dental-care-7:before {
+  content: "\e08b";
+}
+.dentco-extraction-1:before {
+  content: "\e08c";
+}
+.dentco-implant-5:before {
+  content: "\e08d";
+}
+.dentco-tooth-19:before {
+  content: "\e08e";
+}
+.dentco-toothpaste-1:before {
+  content: "\e08f";
+}
+.dentco-user-1:before {
+  content: "\e090";
+}
+.dentco-dentist-4:before {
+  content: "\e091";
+}
+.dentco-dental-checkup:before {
+  content: "\e092";
+}
+.dentco-dental-anesthesia-2:before {
+  content: "\e093";
+}
+.dentco-001-innovation-1:before {
+  content: "\e094";
+}
+.dentco-innovation:before {
+  content: "\e095";
+}
+.dentco-empathy:before {
+  content: "\e096";
+}
+.dentco-compassion:before {
+  content: "\e097";
+}
+.dentco-skill:before {
+  content: "\e098";
+}
