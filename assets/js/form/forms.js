@@ -129,7 +129,7 @@ $document.on('ready', function () {
 				$(form).ajaxSubmit({
 					type: "POST",
 					data: $(form).serialize(),
-					url: "../assets/js/form/process-question.php",
+					url: "process-question.php",
 					success: function success() {
 						$('.successform', $questionForm).fadeIn();
 						$questionForm.get(0).reset();
