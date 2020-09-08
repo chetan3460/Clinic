@@ -7,9 +7,8 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
-        $name = str_replace(array("\r","\n"),array(" "," "),$name);
+				$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $cont_subject = trim($_POST["msg_subject"]);
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
@@ -30,8 +29,7 @@
         // Build the email content.
         $email_content = "Name: $name\n";
         $email_content .= "Email: $email\n\n";
-        $email_content .= "Subject: $cont_subject\n";
-        $email_content .= "Message:\n$msg_subject\n";
+        $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
         $email_headers = "From: $name <$email>";
@@ -54,4 +52,3 @@
     }
 
 ?>
-
