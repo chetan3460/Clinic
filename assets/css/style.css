@@ -4167,27 +4167,28 @@ Main Services Area CSS
 
 /* line 131, ../scss/_service.scss */
 .main-services-area-block {
-  padding: 100px 0 100px; }
+  padding: 100px 0 100px;
+  background-color: #ffffff !important; }
 
-/* line 136, ../scss/_service.scss */
+/* line 138, ../scss/_service.scss */
 .pos-r {
   position: relative;
   background-color: #f4f9fd; }
 
-/* line 140, ../scss/_service.scss */
+/* line 142, ../scss/_service.scss */
 .featured-item {
   padding: 30px;
   margin-bottom: 30px;
   position: relative;
   background-color: #ffffff; }
-  /* line 145, ../scss/_service.scss */
+  /* line 147, ../scss/_service.scss */
   .featured-item.style-3 {
     z-index: 9;
     box-shadow: none;
     border: 1px solid #f6f7fb;
     padding: 25px;
     overflow: hidden; }
-    /* line 151, ../scss/_service.scss */
+    /* line 153, ../scss/_service.scss */
     .featured-item.style-3 .featured-icon {
       margin-bottom: 40px;
       position: relative;
@@ -4200,12 +4201,12 @@ Main Services Area CSS
       text-align: center;
       border-radius: 50%;
       transition: all 500ms ease; }
-      /* line 163, ../scss/_service.scss */
+      /* line 165, ../scss/_service.scss */
       .featured-item.style-3 .featured-icon i {
         background: linear-gradient(135deg, #19ce67 32.5%, #8046f4 45%, #fb3e7d 60%, #00f2aa 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
-    /* line 169, ../scss/_service.scss */
+    /* line 171, ../scss/_service.scss */
     .featured-item.style-3:before {
       content: '';
       width: 273px;
@@ -4218,7 +4219,7 @@ Main Services Area CSS
       opacity: 0.1;
       transform: translate(50%, 50%);
       z-index: -1; }
-    /* line 182, ../scss/_service.scss */
+    /* line 184, ../scss/_service.scss */
     .featured-item.style-3:after {
       content: '';
       width: 493px;
@@ -4231,7 +4232,7 @@ Main Services Area CSS
       z-index: -1;
       transform: translate(-50%, -50%);
       opacity: 0; }
-    /* line 195, ../scss/_service.scss */
+    /* line 197, ../scss/_service.scss */
     .featured-item.style-3 .border-anim {
       z-index: -1;
       position: absolute;
@@ -4251,7 +4252,7 @@ Main Services Area CSS
       -moz-animation-play-state: paused;
       -o-animation-play-state: paused;
       animation-play-state: paused; }
-      /* line 214, ../scss/_service.scss */
+      /* line 216, ../scss/_service.scss */
       .featured-item.style-3 .border-anim:before {
         position: absolute;
         content: '';
@@ -4262,49 +4263,49 @@ Main Services Area CSS
         bottom: 9px;
         border-radius: 50%; }
 
-/* line 227, ../scss/_service.scss */
+/* line 229, ../scss/_service.scss */
 .featured-item.style-3:hover,
 .featured-item.style-3.active {
   background: #19ce67;
   color: #ffffff; }
 
-/* line 232, ../scss/_service.scss */
+/* line 234, ../scss/_service.scss */
 .featured-item.style-3:hover:before,
 .featured-item.style-3.active:before {
   transform: translate(0%, 0%);
   transition: all 0.5s linear; }
 
-/* line 237, ../scss/_service.scss */
+/* line 239, ../scss/_service.scss */
 .featured-item.style-3:hover:after,
 .featured-item.style-3.active:after {
   opacity: 0.1;
   transform: translate(0%, 0%);
   transition: all 0.9s linear; }
 
-/* line 243, ../scss/_service.scss */
+/* line 245, ../scss/_service.scss */
 .featured-item.style-3:hover .featured-icon,
 .featured-item.style-3.active .featured-icon {
   color: #ffffff;
   -webkit-text-fill-color: currentColor; }
 
-/* line 248, ../scss/_service.scss */
+/* line 250, ../scss/_service.scss */
 .featured-item.style-3:hover .featured-title h5,
 .featured-item.style-3.active .featured-title h5 {
   color: #ffffff; }
 
-/* line 252, ../scss/_service.scss */
+/* line 254, ../scss/_service.scss */
 .featured-item.style-3:hover .featured-desc p,
 .featured-item.style-3.active .featured-desc p {
   color: #ffffff; }
 
-/* line 256, ../scss/_service.scss */
+/* line 258, ../scss/_service.scss */
 .featured-item.style-3:hover .featured-desc .boxed-btn3-white-2,
 .featured-item.style-3.active .featured-desc .boxed-btn3-white-2 {
   background: #fff;
   color: #19ce67 !important;
   border: 1px solid #19ce67; }
 
-/* line 262, ../scss/_service.scss */
+/* line 264, ../scss/_service.scss */
 .featured-item.style-3:hover .border-anim,
 .featured-item.style-3.active .border-anim {
   border-color: #00f2aa;
@@ -4314,13 +4315,82 @@ Main Services Area CSS
   -o-animation-play-state: running;
   animation-play-state: running; }
 
-/* line 272, ../scss/_service.scss */
+/* line 274, ../scss/_service.scss */
 .main-services-area-block .featured-item {
   min-height: 632px; }
   @media (max-width: 767px) {
-    /* line 272, ../scss/_service.scss */
+    /* line 274, ../scss/_service.scss */
     .main-services-area-block .featured-item {
       min-height: auto; } }
+
+/* line 287, ../scss/_service.scss */
+.tabulation .nav-pills {
+  width: 100%; }
+  /* line 291, ../scss/_service.scss */
+  .tabulation .nav-pills .nav-item .nav-link {
+    border-radius: 0;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    background: #f9f9f9;
+    border-left: 3px solid transparent;
+    margin: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
+    -webkit-box-shadow: 0 1px 3px -3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 3px -3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3px -3px rgba(0, 0, 0, 0.15); }
+    @media (max-width: 767px) {
+      /* line 291, ../scss/_service.scss */
+      .tabulation .nav-pills .nav-item .nav-link {
+        font-size: 13px; } }
+    /* line 307, ../scss/_service.scss */
+    .tabulation .nav-pills .nav-item .nav-link span.flaticon {
+      color: #19ce67;
+      font-size: 45px; }
+    /* line 311, ../scss/_service.scss */
+    .tabulation .nav-pills .nav-item .nav-link h5 {
+      margin-bottom: 0;
+      line-height: 45px; }
+    /* line 315, ../scss/_service.scss */
+    .tabulation .nav-pills .nav-item .nav-link.active {
+      color: #fff;
+      background: #19ce67;
+      border-left: 3px solid #000;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 10px 14px 0px rgba(90, 111, 155, 0.05);
+      margin-bottom: 30px; }
+      /* line 322, ../scss/_service.scss */
+      .tabulation .nav-pills .nav-item .nav-link.active span.flaticon {
+        color: #fff; }
+/* line 329, ../scss/_service.scss */
+.tabulation .tab-content {
+  padding: 0;
+  width: 100%; }
+  /* line 332, ../scss/_service.scss */
+  .tabulation .tab-content .img {
+    width: 100%; }
+  /* line 335, ../scss/_service.scss */
+  .tabulation .tab-content h3 {
+    font-weight: 600; }
+    /* line 337, ../scss/_service.scss */
+    .tabulation .tab-content h3 a {
+      color: #000; }
+  /* line 341, ../scss/_service.scss */
+  .tabulation .tab-content ul {
+    margin: 0;
+    padding: 0; }
+    /* line 344, ../scss/_service.scss */
+    .tabulation .tab-content ul li {
+      list-style: none;
+      margin: 0 0 7px 0;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 7px 10px; }
+      /* line 349, ../scss/_service.scss */
+      .tabulation .tab-content ul li span.fa {
+        font-size: 12px;
+        margin-right: 15px;
+        color: #19ce67; }
 
 /*-- Emergency --*/
 /* line 2, ../scss/_emergency_contact.scss */
