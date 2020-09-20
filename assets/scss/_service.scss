@@ -310,7 +310,6 @@ Main Services Area CSS
         }
         h5{
           margin-bottom: 0;
-          line-height: 45px
         }
 				&.active{
 					color: $white_color;
@@ -343,13 +342,24 @@ Main Services Area CSS
 			padding: 0;
 			li{
 				list-style: none;
-				margin: 0 0 7px 0;
-				border: 1px solid rgba(0,0,0,.1);
-				padding: 7px 10px;
-				span.fa{
-					font-size: 12px;
-					margin-right: 15px;
-					color: $theme-color;
+        margin-bottom: 16px;
+        position: relative;
+        padding-left: 34px;
+				i{
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+          background-color: #d2f5e1;
+          color: #19ce67;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          display: inline-block;
+          font-size: 11px;
+          position: absolute;
+          left: 0;
+          top: -2px;
 				}
 			}
 		}
