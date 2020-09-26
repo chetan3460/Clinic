@@ -85,8 +85,5 @@ $(function () {
 
 	filterCarousel('.filterCarousel','.js-specialist-carousel');
 
-
-
-
 })
 

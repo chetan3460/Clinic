@@ -2,6 +2,19 @@
 <html class="no-js" lang="en">
 
     <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179069320-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-179069320-1');
+        </script>
+
+
+
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Dr.Kavita Dental Clinic</title>
@@ -102,6 +115,7 @@
 
     <!-- bradcam_area_start  -->
     <div class="bradcam_area breadcam_bg_2 bradcam_overlay">
+        <div id="particles-js" class="particles-pattern"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -116,6 +130,22 @@
                 </div>
             </div>
         </div>
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+            </svg>
+        </div>
+        <!--Waves end-->
     </div>
     <!-- bradcam_area_end  -->
 
@@ -220,34 +250,6 @@
         </div>
     </div>
     <!-- Emergency_contact end -->
-
-	<div id="page-wrapper">
-        <h1>AJAX Contact Form Demo</h1>
-  
-        <div id="form-messages"></div>
-          
-          <form id="ajax-contact" method="post" action="mailer.php">
-              <div class="field">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
-              </div>
-  
-              <div class="field">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-  
-              <div class="field">
-                  <label for="message">Message:</label>
-                  <textarea id="message" name="message" required></textarea>
-              </div>
-  
-              <div class="field">
-                  <button type="submit">Send</button>
-              </div>
-          </form>
-      </div>
-
 
 
     <!-- footer start -->
@@ -356,103 +358,8 @@
         </div>
     </footer>
     <!-- footer end  -->
-<style>
-
-#page-wrapper {
-  width: 640px;
-  background: #FFFFFF;
-  padding: 1em;
-  margin: 1em auto;
-  border-top: 5px solid #69c773;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
-}
-
-h1 {
-  margin-top: 0;
-}
-
-.field {
-  margin: 1em 0;
-}
-
-label {
-  display: block;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  color: #999999;
-}
-
-input {
-  width: 100%;
-  padding: 0.5em 0.5em;
-  font-size: 1.2em;
-  border-radius: 3px;
-  border: 1px solid #D9D9D9;
-}
-
-textarea {
-  width: 100%;
-  height: 200px;
-  padding: 0.5em 0.5em;
-  font-size: 1.2em;
-  border-radius: 3px;
-  border: 1px solid #D9D9D9;
-}
-
-button {
-  display: inline-block;
-  border-radius: 3px;
-  border: none;
-  font-size: 0.9rem;
-  padding: 0.5rem 0.8em;
-  background: #69c773;
-  border-bottom: 1px solid #498b50;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  font-weight: bold;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-}
-
-button:hover, button:focus {
-  opacity: 0.75;
-  cursor: pointer;
-}
-
-button:active {
-  opacity: 1;
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
-}
-
-.success {
-  padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #468847;
-  background-color: #dff0d8;
-  border: 1px solid #d6e9c6;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-
-.error {
-  padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #b94a48;
-  background-color: #f2dede;
-  border: 1px solid rgba(185, 74, 72, 0.3);
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-</style>
 
     <!-- JS here -->
-
-
 
     <script src="/jquery-2.1.0.min.js"></script>
     <!--== modernizr jquery -->
@@ -461,7 +368,8 @@ button:active {
 
 
     <!-- inject js start -->
-
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
     <!--== jquery -->
     <script src="assets/js/theme.js"></script>
 

@@ -2,6 +2,16 @@
 <html class="no-js" lang="en">
 
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179069320-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-179069320-1');
+        </script>
+
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Dr.Kavita Dental Clinic</title>
@@ -50,9 +60,9 @@
                         <div class="col-xl-6 col-md-6">
                           <div class="short_contact_list">
                                 <ul>
-                                    <li><a href="mailto:dentalclinicdrkavita@gmail.com"
+                                    <li><a href="mailto:kavitasdentalclinic@gmail.com"
                                             onclick="ga('send', 'event', 'Email Tracking', 'Click/Touch', 'Contact Us Page');">
-                                            <i class="fas fa-envelope"></i>dentalclinicdrkavita@gmail.com</a></li>
+                                            <i class="fas fa-envelope"></i>kavitasdentalclinic@gmail.com</a></li>
                                     <li><a href="tel:09823497667"
                                             onclick="ga('send', 'event', 'Phone Call Tracking', 'Click/Touch', 'Phone');">
                                             <i class="fas fa-phone-alt"></i>098234 97667</a></li>
@@ -106,6 +116,7 @@
 
     <!-- bradcam_area_start  -->
     <div class="bradcam_area breadcam_bg_2 bradcam_overlay">
+        <div id="particles-js" class="particles-pattern"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -120,6 +131,22 @@
                 </div>
             </div>
         </div>
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+            </svg>
+        </div>
+        <!--Waves end-->
     </div>
     <!-- bradcam_area_end  -->
 
@@ -195,7 +222,8 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <span>Address</span>
-                                CA 560 Bush St & 20th Ave, Apt 5 San Francisco, 230909, Canada
+                                Fort Aguada Rd, Opp. Novotel Hotel, Calangute, Goa 403515 <br>
+                                Tali wado, 403507, Mapusa, Goa 403507
                             </li>
 
                             <li>
@@ -203,8 +231,9 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <span>Email</span>
-                                <a href="#">evolta@email.com</a>
-                                <a href="#">fax@email.com</a>
+                                <a href="mailto:kavitasdentalclinic@gmail.com"
+                                onclick="ga('send', 'event', 'Email Tracking', 'Click/Touch', 'Contact Us Page');">
+                                kavitasdentalclinic@gmail.com</a>
                             </li>
 
                             <li>
@@ -212,8 +241,9 @@
                                     <i class="fas fa-phone-volume"></i>
                                 </div>
                                 <span>Phone</span>
-                                <a href="#">+44 587 154756</a>
-                                <a href="#">+55 5555 14574</a>
+                                <a href="tel:09823497667"
+                                onclick="ga('send', 'event', 'Phone Call Tracking', 'Click/Touch', 'Phone');">
+                                098234 97667</a>
                             </li>
                         </ul>
                     </div>
@@ -295,9 +325,9 @@
                             <ul>
                                 <li>
                                     <i class="fas fa-envelope"></i>
-                                    <a href="mailto:dentalclinicdrkavita@gmail.com"
+                                    <a href="mailto:kavitasdentalclinic@gmail.com"
                                             onclick="ga('send', 'event', 'Email Tracking', 'Click/Touch', 'Contact Us Page');">
-                                            dentalclinicdrkavita@gmail.com</a>
+                                            kavitasdentalclinic@gmail.com</a>
                                 </li>
                                 <li>
                                     <i class="far fa-mobile"></i>
@@ -336,6 +366,10 @@
     <!--== modernizr jquery -->
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
 
     <!--== jquery -->
     <script src="assets/js/theme.js"></script>
@@ -378,23 +412,22 @@
     <!--== contact-form -->
     <!-- <script src="js/contact-form/contact-form.js"></script> -->
 
-    <!-- Form Js -->
+    <!-- Form Js 1-->
     <script src="assets/js/form/forms.js"></script>
     <script src="assets/js/form-validation/jquery.form.js"></script>
     <script src="assets/js/form-validation/jquery.validate.min.js"></script>
+
+
+
     <!--== wow -->
     <script src="assets/js/wow.min.js"></script>
     <!-- inject js end -->
 
-        <script src="assets/js/form/form-validator.min.js"></script>
-        <script src="assets/js/form/contact-form-script.js"></script>
-        <script src="assets/js/mail-script.js"></script>
+    <script src="assets/js/form/form-validator.min.js"></script>
+    <script src="assets/js/form/contact-form-script.js"></script>
+
     
-        
-        <!-- <script src="js/main.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/form-validation/jquery.form.js"></script>
-        <script src="js/form-validation/jquery.validate.min.js"></script> -->
+
 
 
     </body>
