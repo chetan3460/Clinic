@@ -81,7 +81,7 @@ $document.on('ready', function () {
 				$(form).ajaxSubmit({
 					type: "POST",
 					data: $(form).serialize(),
-					url: "/assets/js/form/process-contact.php",
+					url: "process-contact.php",
 					success: function success() {
 						$('.successform', $contactform).fadeIn();
 						$contactform.get(0).reset();
@@ -129,7 +129,7 @@ $document.on('ready', function () {
 				$(form).ajaxSubmit({
 					type: "POST",
 					data: $(form).serialize(),
-					url: "form/process-question.php",
+					url: "process-question.php",
 					success: function success() {
 						$('.successform', $questionForm).fadeIn();
 						$questionForm.get(0).reset();
@@ -178,7 +178,7 @@ $document.on('ready', function () {
 				$(form).ajaxSubmit({
 					type: "POST",
 					data: $(form).serialize(),
-					url: "form/process-booking.php",
+					url: "process-booking.php",
 					success: function success() {
 						$('.successform', $bookingForm).fadeIn();
 						$bookingForm.get(0).reset();
@@ -227,7 +227,7 @@ $document.on('ready', function () {
 				$(form).ajaxSubmit({
 					type: "POST",
 					data: $(form).serialize(),
-					url: "form/process-request.php",
+					url: "process-request.php",
 					success: function success() {
 						$('.successform', $requestForm).fadeIn();
 						$requestForm.get(0).reset();

@@ -903,22 +903,20 @@ h3 {
 
 /* line 143, ../scss/_modal.scss */
 .mfp-content .mfp-close {
-  font-size: 0;
+  font-size: 32px;
   width: 40px;
-  top: -25px;
-  right: -27px; }
+  top: -40px;
+  right: -6px; }
 
 /* line 150, ../scss/_modal.scss */
 .mfp-content .mfp-close:after {
   width: 40px;
   height: 30px;
-  content: '\e937';
   text-align: center;
   font-size: 15px;
-  font-family: 'dentco';
   line-height: 30px; }
 
-/* line 160, ../scss/_modal.scss */
+/* line 158, ../scss/_modal.scss */
 .mfp-arrow:after {
   width: 40px;
   height: 40px;
@@ -930,11 +928,11 @@ h3 {
   border: 0;
   color: #fff; }
 
-/* line 172, ../scss/_modal.scss */
+/* line 170, ../scss/_modal.scss */
 .mfp-arrow.mfp-arrow-right {
   right: 15px; }
 
-/* line 176, ../scss/_modal.scss */
+/* line 174, ../scss/_modal.scss */
 .mfp-arrow.mfp-arrow-left:after {
   content: '\e93c'; }
 
@@ -4036,6 +4034,136 @@ body:not(.touch) .filters-by-category ul a:hover {
 .slick-initialized .slick-slide {
   outline: 0; }
 
+/*--------- end feedback area  -------------*/
+/*--------- start feedback  area -------------*/
+/* line 183, ../scss/_testimonial.scss */
+.feedback-area {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px; }
+
+/* line 190, ../scss/_testimonial.scss */
+.overlay-bg {
+  background-color: rgba(4, 9, 30, 0.7);
+  opacity: unset; }
+  /* line 193, ../scss/_testimonial.scss */
+  .overlay-bg::before {
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: unset; }
+
+/* line 207, ../scss/_testimonial.scss */
+.feedback-left {
+  background: url("../img/testmonial/video-bg.jpg") center;
+  background-size: cover;
+  padding: 130px 0; }
+  @media (max-width: 575px) {
+    /* line 207, ../scss/_testimonial.scss */
+    .feedback-left {
+      margin: 15px; } }
+  /* line 214, ../scss/_testimonial.scss */
+  .feedback-left .play-btn {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    position: relative;
+    top: 3px;
+    z-index: 1;
+    background: #19ce67; }
+    /* line 227, ../scss/_testimonial.scss */
+    .feedback-left .play-btn i {
+      font-size: 20px;
+      font-weight: 700;
+      padding-left: 4px;
+      color: #ffffff; }
+    /* line 233, ../scss/_testimonial.scss */
+    .feedback-left .play-btn::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 60px;
+      height: 60px;
+      -webkit-animation: ripple 1.6s ease-out infinite;
+      animation: ripple 1.6s ease-out infinite;
+      opacity: 0;
+      border-radius: 50%;
+      background: #19ce67; }
+  /* line 248, ../scss/_testimonial.scss */
+  .feedback-left .overlay-bg {
+    background-color: rgba(25, 206, 103, 0.54); }
+  @media (max-width: 991px) {
+    /* line 207, ../scss/_testimonial.scss */
+    .feedback-left {
+      margin-bottom: 30px; } }
+
+/* line 258, ../scss/_testimonial.scss */
+.feedback-right .star {
+  margin-left: 20px; }
+  /* line 260, ../scss/_testimonial.scss */
+  .feedback-right .star .checked {
+    color: orange; }
+/* line 264, ../scss/_testimonial.scss */
+.feedback-right img {
+  margin-bottom: 20px; }
+/* line 268, ../scss/_testimonial.scss */
+.feedback-right .owl-carousel .owl-item img {
+  width: auto !important; }
+/* line 272, ../scss/_testimonial.scss */
+.feedback-right .owl-dots {
+  text-align: left;
+  bottom: 5px;
+  margin-top: 20px;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; }
+/* line 283, ../scss/_testimonial.scss */
+.feedback-right .owl-dot {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  background: rgba(127, 127, 127, 0.5);
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s; }
+/* line 294, ../scss/_testimonial.scss */
+.feedback-right .owl-dot.active {
+  -webkit-transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  background: #19ce67; }
+
+@-webkit-keyframes ripple {
+  0%, 35% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0.8; }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2); } }
+/*--------- end feedback area  -------------*/
 /*================================================
 Main Services Area CSS
 =================================================*/

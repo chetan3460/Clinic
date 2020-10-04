@@ -141,19 +141,17 @@
 }
 
 .mfp-content .mfp-close {
-    font-size: 0;
+    font-size: 32px;
     width: 40px;
-    top: -25px;
-    right: -27px;
+    top: -40px;
+    right: -6px;
 }
 
 .mfp-content .mfp-close:after {
     width: 40px;
     height: 30px;
-    content: '\e937';
     text-align: center;
     font-size: 15px;
-    font-family: 'dentco';
     line-height: 30px;
 }
 

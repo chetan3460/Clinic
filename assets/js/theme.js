@@ -29,6 +29,16 @@
     //   prependTo: ".blog_menu"
     // });
 
+    
+  $('.active-review-carusel').owlCarousel({
+    items:1,
+    loop:true,
+    autoplay:true,
+    autoplayHoverPause: true,        
+    margin:30,
+    dots: true
+  });
+
     // review-active
     $('.slider_active').owlCarousel({
       loop: true,
@@ -66,52 +76,24 @@
 
 
 
+    //------- Owl Carusel  js --------//  
 
-    /* 4. Testimonial Active*/
-    var testimonial = $('.h1-testimonial-active');
-    if (testimonial.length) {
-      testimonial.slick({
-        dots: false,
-        infinite: true,
-        speed: 1000,
-        autoplay: false,
-        loop: true,
-        arrows: true,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false,
-              arrow: false
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: false
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: false,
-            }
-          }
-        ]
-      });
-    }
+    $('.active-review-carusel').owlCarousel({
+      items:1,
+      loop:true,
+      autoplay:true,
+      autoplayHoverPause: true,        
+      margin:30,
+      dots: true
+  });
 
+  $('.play-btn').magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+  });
     // review-active
     $('.expert_active').owlCarousel({
       loop: true,
@@ -421,7 +403,6 @@
       $(this).removeClass('.featured-item').addClass('active');
     });
   };
-
 
 
 
