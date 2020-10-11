@@ -17,7 +17,10 @@ Main Services Area CSS
 	z-index: 1;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
-	overflow: hidden;
+  overflow: hidden;
+  @media #{$tab_device}{
+    min-height: 320px;
+  }
 	.icon {
 		margin-bottom: 20px;
 		text-align: center;
@@ -144,10 +147,13 @@ Main Services Area CSS
     margin-bottom: 30px;
     position: relative;
     background-color: #ffffff;
+    @media #{$tab_device}{
+      min-height: 420px;
+    }
     &.style-3 {
       z-index: 9;
       box-shadow: none;
-      border: 1px solid #f6f7fb;
+      border: 0px solid #f6f7fb;
       padding: 25px;
       overflow: hidden;
       .featured-icon {

@@ -8,19 +8,28 @@
     @media #{$mid_device}{
         padding-bottom: 100px;
     }
-    @media #{$tablet_device}{
+    @media #{$tab_device}{
         padding-bottom: 100px;
     }
     .welcome_dental_img{
 
         position: relative;
-	img {
-		width: 100%;
-		z-index: 1;
-		border-radius: 10px;
-		-webkit-animation: a-seven 10s infinite linear;
-		animation: a-seven 10s infinite linear;
-	}
+        img {
+            width: 100%;
+            z-index: 1;
+            border-radius: 10px;
+            -webkit-animation: a-seven 10s infinite linear;
+            animation: a-seven 10s infinite linear;
+            
+            @media #{$tab_device} {
+                -webkit-animation: unset;
+                animation: unset;
+            }
+            @media #{$xs} {
+                -webkit-animation: unset;
+                animation: unset;
+            }
+        }
         &:before {
             position: absolute;
             content: '';
@@ -33,6 +42,12 @@
             -webkit-animation: a-one 5s infinite linear;
             animation: a-one 5s infinite linear;
             background-color: $theme-color;
+            @media #{$tab_device}{
+                display: none;
+            }
+            @media #{$xs}{
+                display: none;
+            }
         }
         &:after {
             position: absolute;
@@ -46,6 +61,12 @@
             -webkit-animation: a-two 5s infinite linear;
             animation: a-two 5s infinite linear;
             background-color: $theme-color;
+            @media #{$tab_device}{
+                display: none;
+            }
+            @media #{$xs}{
+                display: none;
+            }
         }
     }
     .welcome_dental_info{
@@ -54,7 +75,7 @@
             padding-left: 0;
             margin-top: 40px;
         }
-        @media #{$tablet_device} {
+        @media #{$tab_device} {
             padding-left: 0;
             margin-top: 100px;
         }
@@ -97,6 +118,13 @@
     z-index: -1;
     -webkit-animation: moveBounce 5s linear infinite;
     animation: moveBounce 5s linear infinite;
+    @media #{$tab_device} {
+        display: none;
+    }
+    @media #{$xs} {
+        display: none;
+    }
+
 }
 
 

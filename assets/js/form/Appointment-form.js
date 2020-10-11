@@ -1,9 +1,9 @@
 /*==============================================================*/
-// Fovia Contact Form  JS
+// Appointment appointment Form  JS
 /*==============================================================*/
 (function ($) {
     "use strict"; // Start of use strict
-    $("#contactForm").validator().on("submit", function (event) {
+    $("#appointmentForm").validator().on("submit", function (event) {
         if (event.isDefaultPrevented()) {
             // handle the invalid form...
             formError();
@@ -24,9 +24,10 @@
         var phone_number = $("#phone_number").val();
         var message = $("#message").val();
 
+
         $.ajax({
             type: "POST",
-            url: "process-contact.php",
+            url: "assets/php/form-process.php",
             data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message,
             success : function(text){
                 if (text == "success"){
@@ -40,12 +41,12 @@
     }
 
     function formSuccess(){
-        $("#contactForm")[0].reset();
+        $("#appointmentForm")[0].reset();
         submitMSG(true, "Message Submitted!")
     }
 
     function formError(){
-        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $("#appointmentForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             $(this).removeClass();
         });
     }
@@ -58,6 +59,4 @@
         }
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
-
-    
 }(jQuery)); // End of use strict

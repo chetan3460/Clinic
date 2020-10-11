@@ -5,10 +5,10 @@
 var $document = $(document),
 	$window = $(window),
 	forms = {
-	contactForm: $('#contactForm'),
+	// contactForm: $('#contactForm'),
 	questionForm: $('#questionForm'),
-	bookingForm: $('#bookingForm'),
-	requestForm: $('#requestForm')
+	bookingForm: $('#bookingForm')
+	// requestForm: $('#requestForm')
 };
 
 $document.on('ready', function () {
@@ -46,53 +46,53 @@ $document.on('ready', function () {
 	}
 
 	// contact page form
-	if (forms.contactForm.length) {
-		var $contactform = forms.contactForm;
-		$contactform.validate({
-			rules: {
-				name: {
-					required: true,
-					minlength: 2
-				},
-				message: {
-					required: true,
-					minlength: 20
-				},
-				email: {
-					required: true,
-					email: true
-				}
+	// if (forms.contactForm.length) {
+	// 	var $contactform = forms.contactForm;
+	// 	$contactform.validate({
+	// 		rules: {
+	// 			name: {
+	// 				required: true,
+	// 				minlength: 2
+	// 			},
+	// 			message: {
+	// 				required: true,
+	// 				minlength: 20
+	// 			},
+	// 			email: {
+	// 				required: true,
+	// 				email: true
+	// 			}
 
-			},
-			messages: {
-				name: {
-					required: "Please enter your name",
-					minlength: "Your name must consist of at least 2 characters"
-				},
-				message: {
-					required: "Please enter message",
-					minlength: "Your message must consist of at least 20 characters"
-				},
-				email: {
-					required: "Please enter your email"
-				}
-			},
-			submitHandler: function submitHandler(form) {
-				$(form).ajaxSubmit({
-					type: "POST",
-					data: $(form).serialize(),
-					url: "process-contact.php",
-					success: function success() {
-						$('.successform', $contactform).fadeIn();
-						$contactform.get(0).reset();
-					},
-					error: function error() {
-						$('.errorform', $contactform).fadeIn();
-					}
-				});
-			}
-		});
-	}
+	// 		},
+	// 		messages: {
+	// 			name: {
+	// 				required: "Please enter your name",
+	// 				minlength: "Your name must consist of at least 2 characters"
+	// 			},
+	// 			message: {
+	// 				required: "Please enter message",
+	// 				minlength: "Your message must consist of at least 20 characters"
+	// 			},
+	// 			email: {
+	// 				required: "Please enter your email"
+	// 			}
+	// 		},
+	// 		submitHandler: function submitHandler(form) {
+	// 			$(form).ajaxSubmit({
+	// 				type: "POST",
+	// 				data: $(form).serialize(),
+	// 				url: "process-contact.php",
+	// 				success: function success() {
+	// 					$('.successform', $contactform).fadeIn();
+	// 					$contactform.get(0).reset();
+	// 				},
+	// 				error: function error() {
+	// 					$('.errorform', $contactform).fadeIn();
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// }
 
 	// question form
 	if (forms.questionForm.length) {
@@ -158,6 +158,11 @@ $document.on('ready', function () {
 				bookingemail: {
 					required: true,
 					email: true
+				},
+				bookingphonenumber: {
+					required: true,
+					minlength: 10
+
 				}
 
 			},
@@ -166,12 +171,15 @@ $document.on('ready', function () {
 					required: "Please enter your name",
 					minlength: "Your name must consist of at least 2 characters"
 				},
-				bookingmessage: {
+				bookingmessages: {
 					required: "Please enter message",
 					minlength: "Your message must consist of at least 20 characters"
 				},
 				bookingemail: {
 					required: "Please enter your email"
+				},
+				bookingphonenumber: {
+					required: "Please enter your number"
 				}
 			},
 			submitHandler: function submitHandler(form) {
@@ -192,53 +200,53 @@ $document.on('ready', function () {
 	}
 
 	// request form
-	if (forms.requestForm.length) {
-		var $requestForm = forms.requestForm;
-		$requestForm.validate({
-			rules: {
-				requestname: {
-					required: true,
-					minlength: 2
-				},
-				requestmessages: {
-					required: true,
-					minlength: 20
-				},
-				requestemail: {
-					required: true,
-					email: true
-				}
+	// if (forms.requestForm.length) {
+	// 	var $requestForm = forms.requestForm;
+	// 	$requestForm.validate({
+	// 		rules: {
+	// 			requestname: {
+	// 				required: true,
+	// 				minlength: 2
+	// 			},
+	// 			requestmessages: {
+	// 				required: true,
+	// 				minlength: 20
+	// 			},
+	// 			requestemail: {
+	// 				required: true,
+	// 				email: true
+	// 			}
 
-			},
-			messages: {
-				requestname: {
-					required: "Please enter your name",
-					minlength: "Your name must consist of at least 2 characters"
-				},
-				requestmessage: {
-					required: "Please enter message",
-					minlength: "Your message must consist of at least 20 characters"
-				},
-				requestemail: {
-					required: "Please enter your email"
-				}
-			},
-			submitHandler: function submitHandler(form) {
-				$(form).ajaxSubmit({
-					type: "POST",
-					data: $(form).serialize(),
-					url: "process-request.php",
-					success: function success() {
-						$('.successform', $requestForm).fadeIn();
-						$requestForm.get(0).reset();
-					},
-					error: function error() {
-						$('.errorform', $requestForm).fadeIn();
-					}
-				});
-			}
-		});
-	}
+	// 		},
+	// 		messages: {
+	// 			requestname: {
+	// 				required: "Please enter your name",
+	// 				minlength: "Your name must consist of at least 2 characters"
+	// 			},
+	// 			requestmessage: {
+	// 				required: "Please enter message",
+	// 				minlength: "Your message must consist of at least 20 characters"
+	// 			},
+	// 			requestemail: {
+	// 				required: "Please enter your email"
+	// 			}
+	// 		},
+	// 		submitHandler: function submitHandler(form) {
+	// 			$(form).ajaxSubmit({
+	// 				type: "POST",
+	// 				data: $(form).serialize(),
+	// 				url: "process-request.php",
+	// 				success: function success() {
+	// 					$('.successform', $requestForm).fadeIn();
+	// 					$requestForm.get(0).reset();
+	// 				},
+	// 				error: function error() {
+	// 					$('.errorform', $requestForm).fadeIn();
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// }
 
 });
 
