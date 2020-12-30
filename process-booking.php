@@ -6,9 +6,9 @@
 	$phone = $_REQUEST['bookingphone'];
 	$headers = "From: $from";
 	$date = $_REQUEST['bookingdate'];
-	$time = $_REQUEST['bookingtime'];
-	$service = $_REQUEST['bookingservice'];
-	$age = $_REQUEST['bookingage'];
+	// $time = $_REQUEST['bookingtime'];
+	$service = $_REQUEST['requestservice'];
+	// $age = $_REQUEST['bookingage'];
 	$message = $_REQUEST['bookingmessage'];
 	$subject = "Booking Form from Clinic Website";
 
@@ -17,9 +17,9 @@
 	$fields{"bookingemail"} = "Email";
 	$fields{"bookingphone"} = "Phone";
 	$fields{"bookingdate"} = "Date";
-	$fields{"bookingtime"} = "Time";
-	$fields{"bookingservice"} = "Service";
-	$fields{"bookingage"} = "Age";
+	// $fields{"bookingtime"} = "Time";
+	$fields{"requestservice"} = "Service";
+	// $fields{"bookingage"} = "Age";
 	$fields{"bookingmessage"} = "Message";
 
 	$body = "Here is what was sent:\n\n";
