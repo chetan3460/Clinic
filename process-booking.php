@@ -1,6 +1,6 @@
 <?php
 
-	$to = "info@drkavitasdentalclinics.com";  // Your email here
+	$to = "chetan.dmc@gmail.com";  // Your email here
 	$from = $_REQUEST['bookingemail'];
 	$name = $_REQUEST['bookingname'];
 	$phone = $_REQUEST['bookingphone'];
